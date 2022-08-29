@@ -1,0 +1,9 @@
+---
+- name : test slay.yaml
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: chu command
+      shell: |
+        echo "chu command "
+        cat /etc/os-release

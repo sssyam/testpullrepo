@@ -1,0 +1,12 @@
+---
+- name : test play.yaml
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: ping command
+      ping:
+
+    - name: echo command
+      shell: |
+        echo "Hello world"
+        hostname
